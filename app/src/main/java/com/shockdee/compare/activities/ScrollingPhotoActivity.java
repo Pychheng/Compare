@@ -228,7 +228,7 @@ public class ScrollingPhotoActivity extends AppCompatActivity {
         Photo photo = new Photo(imageName, txtEdPhotoProductName, photoType, photoBrand, photoStore, date, price, txtEdPhotoDescription, currentImagePath);
         boolean isInserted = myDB.insertPhoto(photo);
         if (isInserted == true) {
-            Toast.makeText(ScrollingPhotoActivity.this, "Data insterted", Toast.LENGTH_SHORT).show();
+            Toast.makeText(ScrollingPhotoActivity.this, "Data inserted", Toast.LENGTH_SHORT).show();
             boolean end = isFinished();
             if (end == true) {
                 toListAcivity();
